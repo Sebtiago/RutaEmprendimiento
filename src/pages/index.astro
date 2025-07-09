@@ -1,11 +1,149 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
+<BaseLayout>
+  <!-- Hero / Inicio -->
+  <section class="bg-gradient-to-b from-papaya_whip-500 to-papaya_whip-900 py-24 text-center">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6 text-barn_red-600">
+        ¿Tienes una idea de negocio?<br />Validémosla paso a paso.
+      </h1>
+      <p class="text-lg md:text-2xl text-prussian_blue-600 max-w-2xl mx-auto mb-8">
+        La <strong>Ruta de Comprobación de Ideas</strong> es una guía práctica para personas que quieren empezar su emprendimiento desde cero, sin perder tiempo ni dinero. Está pensada para que cualquier persona (sin importar su experiencia previa) pueda entender cómo avanzar desde una simple idea hasta una validación real con personas de verdad.
+      </p>
+      <a href="#metodologia" class="inline-block bg-barn_red-600 hover:bg-barn_red-700 text-papaya_whip-900 font-semibold py-3 px-6 rounded-lg transition">
+        Descubre cómo funciona
+      </a>
+    </div>
+  </section>
 
-<Layout>
-	<Welcome />
-</Layout>
+  <!-- ¿Por qué validar una idea? -->
+  <section class="py-20 bg-papaya_whip-800 text-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-barn_red-600 mb-6">
+        Emprender sin validar puede ser un gran riesgo
+      </h2>
+      <p class="text-lg text-prussian_blue-600 max-w-3xl mx-auto">
+        Muchas personas en Colombia (y en el mundo) comienzan sus negocios con entusiasmo, pero sin saber si su idea realmente resuelve un problema que alguien tenga o si habrá personas dispuestas a pagar por lo que ofrecen. Lo hacen con buena intención, pero terminan enfrentando frustraciones, pérdidas de dinero o incluso el abandono del proyecto. <br /><br />
+        <strong>Validar una idea</strong> no significa tener todo claro desde el principio. Significa tener la disposición de aprender, de preguntar, de observar, y de mejorar antes de lanzarse de lleno. <br /><br />
+        Por eso nace esta Ruta. Para que cualquier persona —aunque no sepa nada de negocios, startups o innovación— pueda avanzar paso a paso, con claridad, con herramientas amigables y con ejemplos sencillos.
+      </p>
+    </div>
+  </section>
+
+  <!-- Metodología como historia -->
+  <section id="metodologia" class="py-24">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <h2 class="text-3xl md:text-4xl font-bold text-barn_red-600 text-center mb-12">
+        La Ruta: 6 pasos sencillos para comprobar tu idea
+      </h2>
+
+      <div class="space-y-12">
+        <div>
+          <h3 class="text-2xl font-semibold text-fire_brick-600">1. Conócete y conoce tu entorno</h3>
+          <p class="text-prussian_blue-600 mt-2">Todo comienza contigo. Antes de hablar de clientes o mercados, esta metodología te invita a mirar hacia dentro: ¿por qué quieres emprender? ¿Qué habilidades, intereses o motivaciones tienes? ¿Qué pasa a tu alrededor, en tu comunidad, tu ciudad, tu país? Este paso te ayuda a comprender desde dónde partes y qué oportunidades podrías aprovechar. Es como hacer un mapa inicial de tu propio terreno antes de construir.</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold text-fire_brick-600">2. Enfoca tu idea</h3>
+          <p class="text-prussian_blue-600 mt-2">Una idea es solo un punto de partida. Aquí comienzas a definir con mayor precisión qué problema crees que estás resolviendo y a quién quieres ayudar. Aprendes a formular <em>hipótesis</em> claras y comprobables, es decir, afirmaciones que puedes poner a prueba. Así evitas suposiciones vagas como “esto seguro le sirve a todos”. En este paso, tu idea comienza a tomar forma real.</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold text-fire_brick-600">3. Imagina formas de validarla</h3>
+          <p class="text-prussian_blue-600 mt-2">¿Cómo saber si tu hipótesis es cierta? Aquí entras a la parte creativa. Este paso te enseña a generar diferentes formas de validar tu idea sin necesidad de lanzar un producto completo. Puedes entrevistar personas, mostrar imágenes, construir prototipos de papel, hacer encuestas o simular escenarios. Se trata de experimentar sin miedo y de elegir las estrategias que más se ajustan a tu contexto y tus recursos.</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold text-fire_brick-600">4. Construye algo simple</h3>
+          <p class="text-prussian_blue-600 mt-2">A veces creemos que para validar una idea hay que tener todo listo, pero no es así. Lo que necesitas es un “vehículo” que te permita comprobar. Puede ser una presentación, una página sencilla, un video explicativo, o incluso una conversación guiada. Aquí aprendes a construir ese primer artefacto o experiencia mínima para mostrar tu idea al mundo.</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold text-fire_brick-600">5. Sal a comprobar</h3>
+          <p class="text-prussian_blue-600 mt-2">Ahora sí: es hora de validar. Esto significa llevar tu propuesta a personas reales. Observar cómo reaccionan, qué entienden, qué no entienden, qué les interesa, qué preguntas hacen. Este paso es crucial porque te da información real, no suposiciones. No es vender todavía, es <strong>aprender de la realidad</strong>.</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold text-fire_brick-600">6. Reflexiona y decide</h3>
+          <p class="text-prussian_blue-600 mt-2">Con todo lo que aprendiste, llega el momento de pensar. ¿Qué funcionó? ¿Qué no? ¿Qué podrías mejorar? Aquí decides si seguir, cambiar de enfoque o incluso pausar. Validar no es un examen que se pasa o se pierde, es un proceso de aprendizaje continuo. Este paso te empodera para tomar decisiones más inteligentes y humanas.</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="#herramientas" class="inline-block bg-barn_red-600 hover:bg-barn_red-700 text-papaya_whip-900 font-semibold py-3 px-6 rounded-lg transition">
+          Ver herramientas por paso
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Herramientas -->
+  <section id="herramientas" class="py-24 bg-papaya_whip-700">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-barn_red-600 text-center mb-12">
+        Herramientas prácticas para cada paso
+      </h2>
+      <p class="text-center text-prussian_blue-600 max-w-2xl mx-auto mb-8">
+        Son plantillas listas para imprimir o usar digitalmente. Te guían paso a paso con ejemplos, preguntas clave y espacios para escribir.
+      </p>
+      <div class="text-center">
+        <a href="#recursos" class="text-barn_red-600 underline font-medium">Descargar todas las herramientas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recursos -->
+  <section id="recursos" class="py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-barn_red-600 mb-6">
+        Recursos descargables
+      </h2>
+      <ul class="space-y-4 max-w-xl mx-auto text-left">
+        <li><a href="#" class="flex justify-between border p-4 rounded-lg hover:bg-papaya_whip-800 border-air_superiority_blue-200"><span class="text-prussian_blue-500 font-medium">Guía metodológica completa</span><span class="text-barn_red-600 underline">PDF</span></a></li>
+        <li><a href="#" class="flex justify-between border p-4 rounded-lg hover:bg-papaya_whip-800 border-air_superiority_blue-200"><span class="text-prussian_blue-500 font-medium">Manual del facilitador</span><span class="text-barn_red-600 underline">PDF</span></a></li>
+        <li><a href="#" class="flex justify-between border p-4 rounded-lg hover:bg-papaya_whip-800 border-air_superiority_blue-200"><span class="text-prussian_blue-500 font-medium">Ejemplo de caso real</span><span class="text-barn_red-600 underline">PDF</span></a></li>
+      </ul>
+
+      <form class="mt-10 max-w-md mx-auto">
+        <label class="block text-sm font-medium text-prussian_blue-600 mb-1">¿Quieres recibir plantillas futuras?</label>
+        <div class="flex">
+          <input type="email" placeholder="tu@correo.com" required class="flex-1 border border-air_superiority_blue-200 rounded-l-lg px-4 py-2" />
+          <button type="submit" class="bg-barn_red-600 hover:bg-barn_red-700 text-white px-4 rounded-r-lg">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Sobre el proyecto -->
+  <section id="sobre" class="py-20 bg-papaya_whip-900">
+    <div class="container mx-auto px-4 text-center max-w-3xl">
+      <h2 class="text-3xl md:text-4xl font-bold text-barn_red-600 mb-6">¿Quién creó esta metodología?</h2>
+      <img src="/autor.jpg" alt="Foto del autor" class="w-32 h-32 mx-auto rounded-full object-cover mb-4" />
+      <p class="text-prussian_blue-600">
+        Esta metodología nace de una tesis que busca <strong>democratizar el acceso</strong> a herramientas de innovación para cualquier persona que tenga una idea. Está licenciada bajo Creative Commons para que puedas usarla y compartirla libremente.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-barn_red-600 mb-6">Contáctame</h2>
+      <form name="contact" data-netlify="true" class="max-w-lg mx-auto grid gap-4 text-left">
+        <input type="hidden" name="form-name" value="contact" />
+        <div>
+          <label class="block text-sm font-medium text-prussian_blue-600 mb-1">Nombre</label>
+          <input name="name" required class="w-full border border-air_superiority_blue-200 rounded-lg px-4 py-2" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-prussian_blue-600 mb-1">Email</label>
+          <input type="email" name="email" required class="w-full border border-air_superiority_blue-200 rounded-lg px-4 py-2" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-prussian_blue-600 mb-1">Mensaje</label>
+          <textarea name="message" rows="4" required class="w-full border border-air_superiority_blue-200 rounded-lg px-4 py-2"></textarea>
+        </div>
+        <button type="submit" class="bg-barn_red-600 hover:bg-barn_red-700 text-white font-medium py-2 px-6 rounded-lg">
+          Enviar mensaje
+        </button>
+      </form>
+    </div>
+  </section>
+</BaseLayout>
